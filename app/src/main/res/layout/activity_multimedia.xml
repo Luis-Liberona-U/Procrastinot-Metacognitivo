@@ -1,10 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollMultimedia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.MultimediaActivity">
+    android:background="#F5F7FA"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consejos para comenzar"
+            android:textColor="#202124"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cada persona avanza a su ritmo. Organiza tus tareas y reconoce tus progresos."
+            android:textColor="#505050"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgConsejo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/consejo"
+            android:background="#E2E8F0"
+            android:contentDescription="Personas diversas organizando sus tareas"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/btnAnimar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:text="Mostrar imagen con animación"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvTituloAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Un consejo para dar el primer paso"
+            android:textColor="#202124"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:text="Escuchar consejo"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvTituloVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Cómo organizar una tarea"
+            android:textColor="#202124"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoConsejo"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:text="Reproducir video"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvTituloFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Prepara tu espacio de trabajo"
+            android:textColor="#202124"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescripcionFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Toma una foto de tu espacio antes de comenzar."
+            android:textColor="#505050"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/consejo"
+            android:background="#E2E8F0"
+            android:contentDescription="Personas diversas organizando sus tareas"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/btnFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:text="Tomar foto"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:minHeight="48dp"
+            android:text="Volver"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

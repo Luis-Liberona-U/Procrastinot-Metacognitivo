@@ -21,6 +21,11 @@ private long usuarioId; //Guarda id del usuario
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_principal);
 
+        findViewById(R.id.btnPerfil).setOnClickListener(v -> {
+            Intent intent = new Intent(this, MultimediaActivity.class);
+            startActivity(intent);
+        });
+
         // Asignar nombre al titulo
         usuarioId = getIntent().getLongExtra("usuario_id", -1);
         String nombreUsuario = getIntent().getStringExtra("usuario_nombre");
